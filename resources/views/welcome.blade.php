@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Airliances 1
+                    Airliances again
                 </div>
 
                 <div class="links">
