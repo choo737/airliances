@@ -1,0 +1,112 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.t-30 {
+    top: 30%;
+}
+
+.large-input {
+    font-size: 35px;
+    text-align: center; 
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+}
+
+.large-input:focus {
+    outline-width: 0;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .title {
+        font-size: 44px;
+    }
+
+    .large-input {
+        font-size: 15px;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    .title {
+        font-size: 64px;
+    }
+
+    .large-input {
+        font-size: 20px;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .title {
+        font-size: 64px;
+    }
+
+    .large-input {
+        font-size: 20px;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .title {
+        font-size: 84px;
+    }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    .title {
+        font-size: 84px;
+    }
+}
