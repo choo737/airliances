@@ -71,10 +71,10 @@
     <script id="hotelTmpl" type="text/x-jsrender">
         <div class="card-body">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img src="https://www.kayak.com@{{:thumburl}}" />
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-md-6 col-lg-8">
                     <h5 class="card-title">@{{:name}}</h5>
                     <p class="card-text">Stars:@{{:stars}}</p>
                     <a href="https://www.google.com/maps/search/?api=1&query=@{{:lat}},@{{:lon}}">View on map</a>
@@ -89,8 +89,8 @@
         var hotels = [];
         var currentPage = 1;
         var pageSize = 20;
-        var checkInDate;
-        var checkOutDate;
+        var checkInDate = getTodaysDate();
+        var checkOutDate = getTodaysDate();
         $('input[name="dates"]').daterangepicker({
             locale: {
                 format: 'YYYY-MM-DD'
@@ -99,7 +99,6 @@
         }, function(start, end, label){
             checkInDate = start;
             checkOutDate = end;
-
             $('#numberOfNights').html(" " + getNumberOfNights() + " nights");
         });
         
@@ -213,6 +212,23 @@
             else {
                 return 0;
             }
+        }
+
+        function getTodaysDate(){
+            let today = new Date();
+            let dd = today.getDate();
+            let mm = today.getMonth() + 1; //January is 0!
+            let yyyy = today.getFullYear();
+
+            if (dd < 10) {
+            dd = '0' + dd;
+            }
+
+            if (mm < 10) {
+            mm = '0' + mm;
+            }
+
+            return new Date(yyyy + '-' + mm + '-' + dd);
         }
     </script>
 </div>
