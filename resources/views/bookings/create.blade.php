@@ -21,7 +21,7 @@
                         <select id="selectarea" name="area">
                             <option value="-1">Select a city</option>
                             @foreach ($areas as $area)
-                                <option value="{{$area->ctid}}">{{$area->name}}</option>
+                                <option value="{{$area->id}}">{{$area->name}}</option>
                             @endforeach
                         </select>
                     </td>
@@ -53,8 +53,7 @@
         </form>
         <br>
         <img id="fetch-hotel-spinner" src="/svg/spinner.svg" class="d-none" />
-        <div id="hotelpanel" class="card">
-            <!--d-none-->
+        <div id="hotelpanel" class="card d-none">
             <h5 class="card-header">Hotels in range</h5>
             <div id="pagenumbers" style="padding: 0.75rem 1.25rem;">
             </div>
