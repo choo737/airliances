@@ -65,7 +65,9 @@
                             </div>
                         </div>
                         <br />
-                        <p style="margin-left:265px">OR</p>
+                        <div class="col-md-8 offset-md-4">
+                        <p>OR</p>
+                        </div>
                         <br />
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
