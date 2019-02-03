@@ -17,4 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/redirect/{socialservice}', 'SocialAuthFacebookController@redirect');
+Route::get('/callback/{socialservice}', 'SocialAuthFacebookController@callback');
+
+Route::get('/bookings/new', 'BookingController@create');
+Route::post('/bookings', 'BookingController@store');
+Route::get('/mybookings', 'BookingController@index');
 Route::get('/home', 'HomeController@index')->name('home');

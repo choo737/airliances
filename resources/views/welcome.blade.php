@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+        <meta name="B-verify" content="10df1d35a4c67048dc1ceaccfacf36209182c48f" />
+        
+        <title>Airliances</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/welcome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -29,14 +33,14 @@
 
             <div class="content align-items-center align-self-center">
                 <div class="title">
-                    Airliances 1.0
+                    Airliances <i class="fas fa-home animated slideInDown delay-2s"></i>
                 </div>
                 <div class="m-b-md">
                     Stay anywhere, anytime, at a fixed rate.
                 </div>
                 <br>
                 <div>
-                    <input placeholder="Where are you going?" class="large-input" type="text" size="25" />
+                    <a class="btn btn-primary large-input" href="/bookings/new" role="button">Book Now</a>
                 </div>
             </div>
         </div>
